@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+
+@import './app/app.component.scss';
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('./assets/fonts/OpenSans.ttf');
+}
+@font-face {
+    font-family:"Bebas Neue Bold";
+    src: url('./assets/fonts/Bebas\ Neue\ Bold.ttf');
+}
+@font-face {
+    font-family: 'Open Sans Semibold', sans-serif;
+    src: url('./assets/fonts/Open\ San\ Semibolds.ttf');
+}
+
+:root{
+    $second:#00A4E5;
+    $primary:#48555B;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+}

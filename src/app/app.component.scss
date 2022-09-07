@@ -1,0 +1,47 @@
+
+$second:#00A4E5;
+$primary:#48555B;
+
+h1,h2,h3,h4{
+    margin: 0;
+}
+.selected{
+    color:$second;   
+}
+
+.main{
+    color:$primary;
+}
+
+.logo{
+    width: 101.62px;
+    height: 23px;
+}
+
+.tagline{
+    font-family:"Bebas Neue Bold";
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 5.70937px;
+    text-transform: uppercase;    
+}
+
+.subtitle{
+    font-family: 'Open Sans Semibold', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.subsubtitle{
+    font-family: 'Open Sans Semibold', sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 3.7px;
+    text-transform: uppercase;
+    color:white;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
