@@ -1,21 +1,22 @@
 
 $second:#00A4E5;
 $primary:#48555B;
-
-h1,h2,h3,h4{
-    margin: 0;
+a{
+    color: inherit;
+    text-decoration: inherit;
 }
 .selected{
     color:$second;   
 }
 
-.main{
+.body{
     color:$primary;
 }
 
 .logo{
     width: 101.62px;
     height: 23px;
+
 }
 
 .tagline{
@@ -23,13 +24,15 @@ h1,h2,h3,h4{
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 5.70937px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .subtitle{
     font-family: 'Open Sans Semibold', sans-serif;
     font-size: 16px;
     line-height: 19px;
+    text-align: center;
 }
 
 .subsubtitle{
@@ -39,9 +42,35 @@ h1,h2,h3,h4{
     letter-spacing: 3.7px;
     text-transform: uppercase;
     color:white;
+    text-align: center;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+._container{
+    max-width: 941px;
+    margin: 0px auto;
 }
 
+._big-container{
+    max-width: 1438px;
+    margin: 0px auto;
+}
+
+.header{
+    margin: 0px auto;
+    background-image: url('../assets/bg/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 25% 75%;
+    height: 769px;
+}
+
+.header__logo{
+    justify-content: center;
+    width: 101px;
+    height: 23px;
+}
