@@ -24,9 +24,8 @@ a{
 }
 
 .subtitle{
-    font-family: 'Open Sans Semibold', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-
     text-align: center;
 }
 
@@ -62,6 +61,7 @@ a{
     background-size: cover;
     background-position-x: center;
     height: 769px;
+    user-select: none;
 }
 
 .header__container__logo{
@@ -152,5 +152,22 @@ a{
     }
     .header{
         height: 769px;
+    }
+}
+
+@media (min-width:1000px){
+    .initial-photo__text{
+        margin-top: 260px;
+    }
+    .tagline{
+        font-size: 60px;
+        line-height: 0px;
+    }
+    .initial-photo__footer{
+        margin-top: 400px;
+    }
+    .header{
+        height: 920px;
+        background-size: contain;
     }
 }
