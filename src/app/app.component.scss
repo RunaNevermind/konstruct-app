@@ -1,16 +1,11 @@
 
-$second:#00A4E5;
-$primary:#48555B;
+html,body{
+    height: 100%;
+}
+
 a{
     color: inherit;
     text-decoration: inherit;
-}
-.selected{
-    color:$second;   
-}
-
-.body{
-    color:$primary;
 }
 
 .logo{
@@ -31,7 +26,7 @@ a{
 .subtitle{
     font-family: 'Open Sans Semibold', sans-serif;
     font-size: 16px;
-    line-height: 19px;
+
     text-align: center;
 }
 
@@ -60,17 +55,102 @@ a{
 }
 
 .header{
-    margin: 0px auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     background-image: url('../assets/bg/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: 25% 75%;
+    background-position-x: center;
     height: 769px;
 }
 
-.header__logo{
+.header__container__logo{
+    display: flex;
     justify-content: center;
-    width: 101px;
-    height: 23px;
+}
+
+.header__logo{
+    padding: 41px;
+    height: 30px;
+}
+
+.header__initial-photo{
+    position: sticky;
+}
+
+.text-body{
+    color: white;
+}
+
+
+.initial-photo__text{
+    margin: auto 0;
+    color: white;
+}
+
+.initial-photo__footer{
+    position: sticky;
+    margin-top: 200px;
+}
+
+@media (min-width:282px){
+    .initial-photo__text{
+        margin-top: 130px;
+    }
+    .tagline{
+        font-size: 40px;
+        line-height: 35px;
+    }
+    .initial-photo__footer{
+        margin-top: 120px;
+    }
+    .header{
+        height: 600px;
+    }
+}
+@media (min-width:318px){
+    .initial-photo__text{
+        margin-top: 130px;
+    }
+    .tagline{
+        font-size: 50px;
+        line-height: 40px;
+    }
+    .initial-photo__footer{
+        margin-top: 120px;
+    }
+    .header{
+        height: 600px;
+    }
+}
+@media (min-width:424px){
+    .initial-photo__text{
+        margin-top: 190px;
+    }
+    .tagline{
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .initial-photo__footer{
+        margin-top: 150px;
+    }
+    .header{
+        height: 700px;
+    }
+}
+
+@media (min-width:760px){
+    .initial-photo__text{
+        margin-top: 260px;
+    }
+    .tagline{
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .initial-photo__footer{
+        margin-top: 210px;
+    }
+    .header{
+        height: 769px;
+    }
 }

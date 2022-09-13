@@ -1,5 +1,6 @@
 
-
+$second:#00A4E5;
+$primary:#48555B;
 
 @import './app/app.component.scss';
 @font-face {
@@ -22,8 +23,4 @@
 @font-face {
     font-family: 'Open Sans ExtraBold', sans-serif;
     src: url('./assets/fonts/OpenSans-ExtraBold.ttf');
-}
-:root{
-    $second:#00A4E5;
-    $primary:#48555B;
 }
