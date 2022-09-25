@@ -1,6 +1,6 @@
 
-$second:#00A4E5;
-$primary:#48555B;
+$second:#00A4E5 !global;
+$primary:#48555B !global;
 
 @import './app/app.component.scss';
 @font-face {
