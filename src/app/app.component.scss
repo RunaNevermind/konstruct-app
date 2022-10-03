@@ -122,10 +122,11 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    height: 100%;
+    height: 100vh;
     user-select: none;
     .cover__container__logo{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         .cover__logo{
             padding: 41px;
@@ -133,16 +134,19 @@ h3{
         }        
     }
     .cover__initial-photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
         .initial-photo__text{
             margin: auto 0;
             color: white;
-            margin-top: 300px;
             .text-body{
                 color: white;
             }                     
         }
         .initial-photo__footer{
-            margin-top: 250px;
             margin-bottom: 50px;
         }
     }
@@ -150,6 +154,7 @@ h3{
 
 .burger__wrapper{
     border-bottom: 1px solid #E6E6E6;
+    user-select: none;
     .burger{
         display: flex;
         justify-content: space-between;
@@ -176,6 +181,10 @@ h3{
                 color:$second;
             }
         }
+        .burger__menu-svg{
+            display: none;
+            cursor: pointer;
+        }
     }
 }
 
@@ -196,6 +205,7 @@ h3{
 .content__text{
     line-height: 23px;
     color: $primary;
+    user-select: none;
     .content__text__subtitle{
         font-family: "Open Sans Bold", sans-serif;
         font-weight: 700;
@@ -219,6 +229,7 @@ h3{
 .content__images{
     display: flex;
     justify-content: flex-end;
+    user-select: none;
     .content__images__img1,.content__images__img2,.content__images__img3{
         color: white;
         font-family: "Open Sans ExtraBold", sans-serif;
@@ -270,7 +281,7 @@ h3{
     display: flex;
     flex-direction: column;
     padding-top: 100px;
-
+    user-select: none;
     .title{
         position: relative;
         color: $primary;    
@@ -356,6 +367,9 @@ h3{
     height: 500px;
     justify-content: center;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
     .build__title{
         font-family: 'Open Sans Bold', sans-serif;
         font-weight: 600;
@@ -363,7 +377,6 @@ h3{
         line-height: 36px;
         letter-spacing: 1.09px;
         color: $primary;
-
         max-width: 350px;
         text-align: center;
         margin: 0 auto;
@@ -374,87 +387,143 @@ h3{
 }
 
 
-@media (max-width:318px){
-    .initial-photo__text{
-        margin-top: 130px;
+.email{
+    position: relative;
+    bottom: 1px;
+    .email__title_min{
+        display: none;
+        justify-content: center;
+        background-color: #171819;
+        padding:20px 0px 0px;
+        margin-top: 0px;
+        font-family: 'Open Sans Bold', sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        color: #ffff;
+        margin-top: 5px;
+    }    
+    .email__wrapper{
+        background-color: #171819;
+        display: flex;
+        justify-content: center;
+        padding:33px 0px;
+        margin-top: 0px;
+        .email__title{
+            font-family: 'Open Sans Bold', sans-serif;
+            font-weight: 600;
+            font-size: 22px;
+            color: #ffff;
+            padding-right: 70px;
+            margin-top: 5px;
+        }     
+        .email__input{        
+            .email__input__string{
+                width: 250px;
+                height: 30px;
+                padding-left: 17px;
+            }
+            button{
+                position: relative;
+                padding: 11px 30px 11px;
+                right: 1px;
+            }
+        }
+    }    
+}
+
+.footer{
+    position: relative;
+    bottom: 1px;
+    background-color: #141A20;
+    color: white;
+    max-height: 240px;
+    .footer__wrapper{
+        display: flex;
+        justify-content: space-between;
+        .footer__company{
+            max-width: 250px;
+        }
+        .footer__title{
+            font-family: 'Open Sans Bold', sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 1.09px;
+            text-transform: uppercase;
+        }
+        .footer__link{
+            .footer__social-network{
+                display: flex;
+                flex-direction: column;
+                max-width: 20px;
+                
+                .social-network__href{
+                    max-height: 20px;
+                    font-size: 11px;
+                    .href__img{
+
+                    }
+                }
+            }            
+        }
+ 
     }
+    .footer__link__href{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 130px;
+        .link{
+            font-family: 'Open Sans Bold', sans-serif;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 100%;
+            letter-spacing: 1.09px;
+            text-transform: uppercase;
+            color: white;
+            padding: 20px 15px 0px 0px;         
+        }        
+    }
+}
+
+
+
+
+
+@media (max-width:318px){
     .tagline{
         font-size: 40px;
         line-height: 35px;
     }
-    .initial-photo__footer{
-        margin-top: 120px;
-        margin-bottom: 70px;
-    }
-    .cover{
-        height: 600px;
-    }
 }
 @media (max-width:424px){
-    .initial-photo__text{
-        margin-top: 120px;
-    }
     .tagline{
         font-size: 50px;
         line-height: 40px;
     }
-    .initial-photo__footer{
-        margin-top: 120px;
-    }
-    .cover{
-        height: 600px;
-    }
 }
 @media (max-width:760px){
-    .initial-photo__text{
-        margin-top: 100px;
-    }
     .tagline{
         font-size: 60px;
         line-height: 65px;
     }
-    .initial-photo__footer{
-        margin-top: 150px;
+    .build{
+        margin-top: 20px;
     }
-    .cover{
-        height: 800px;
+    .email{
+        .email__title_min{
+            display: flex;
+        }
+        .email__title{
+            display: none;
+        }
     }
+
 }
-
-@media (max-width:1000px){
-    .initial-photo__text{
-        margin-top: 160px;
-     
-    }
-    .tagline{
-        font-size: 60px;
-        line-height: 65px;
-
-    }
-    .initial-photo__footer{
-        margin-top: 250px;
-        margin-bottom: 50px;
-    }
-    .cover{
-        height: 100%;
-    }
-}
-
 @media (max-width:1718px){
-    .initial-photo__text{
-        margin-top: 160px;
-    }
     .tagline{
         font-size: 60px;
         line-height:65px;
-    }
-    .initial-photo__footer{
-        margin-top: 250px;
-        margin-bottom: 50px;
-    }
-    .cover{
-        height: 100%;
-        background-size: cover;
     }
 }
 
@@ -467,25 +536,22 @@ h3{
         padding-top: 10px;
     }
     .burger__menu{
-        padding-left: 25px;
+        display: none;
     }
-
+    .burger__menu-svg{
+        display:flex;
+        margin-right: 250px;
+    }
     .menu__href:not(:last-child){
         padding-right: 10px;
     }
-
     .menu__href{
         font-size: 15px;
         padding-top: 15px; 
     }
-    
 }
 
 @media (max-width:543px){
-    .burger__menu{
-        display: flex;
-        flex-wrap: wrap;
-    }
     .content__text{
         display: none;
     }
@@ -495,21 +561,17 @@ h3{
 }
 
 @media (max-width:828px){
-
     .header__content{
         display: flex;
         flex-direction: column;
     }
-
     .content__images{
         justify-content: center;
         padding-top: 30px;
     }
-
     .content__text{
         text-align: center;
     }
-
     .our-capabilities__article{
         flex-wrap: wrap;
         .article__table{
